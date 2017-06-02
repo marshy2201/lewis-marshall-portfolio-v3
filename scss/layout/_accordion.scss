@@ -1,0 +1,18 @@
+﻿nav {
+    @extend %hide-tablet;
+}
+   
+#accordion {
+    display: none;
+    flex-basis: 100%;
+    font-family: $font-stack-secondary;
+    li {
+        border-top: 2px solid $color-primary;
+        background: $color-secondary;
+    }
+    a {
+        display: block;
+        padding: 16px 10px;
+        color: $white;
+    }  
+}

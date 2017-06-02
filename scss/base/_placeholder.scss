@@ -1,0 +1,13 @@
+﻿// Placeholders
+
+%hide-tablet {
+    @media #{$brk-tablet} {
+        display: none;
+    }
+}
+
+%hide-desktop {
+    @media #{$brk-desktop} {
+        display: none;
+    }
+}

@@ -1,0 +1,99 @@
+﻿#contact-content {
+    h3 {
+        color: $color-primary;
+    }
+}
+
+#form {
+    padding: 48px 1em;
+    background-color: $color-bg;
+    border-bottom: 3px solid $color-border;
+
+    .container {
+        @media #{$brk-desktop} {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+
+%input {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 3px $color-secondary;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    font-size: 1.05em;
+    color: $color-secondary;
+    transition: background-color .3s;
+    &:hover {
+        background-color: lighten($color-primary, 50%);
+    }
+}
+
+input {
+    @extend %input;    
+}
+
+textarea {
+    @extend %input;
+    resize: none;
+    height: 300px;
+}
+
+input[type="submit"] {
+    background-color: $color-primary;
+    color: $white;
+    font-family: $font-stack-primary;
+    &:hover {
+        background-color: darken($color-primary, 20%);
+    }
+}
+
+hr {
+    margin: 36px 0;
+    @media #{$brk-desktop} {
+        display: none;
+    }
+}
+
+#contact-details {
+    @media #{$brk-desktop} {
+        text-align: center;
+    }
+}
+
+form {
+    @include flex-column;
+    min-height: 300px;
+    justify-content: center;
+    @media #{$brk-desktop} {
+        width: 500px;
+        min-height: 500px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.15em;
+    }
+
+    a:hover {
+        color: $color-light;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+    animation: iframe-fade-in 5s;
+    @media #{$brk-desktop} {
+        height: 400px;
+    }
+}
+
+.scroll-off {
+    pointer-events: none;
+}

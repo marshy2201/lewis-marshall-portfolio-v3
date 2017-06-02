@@ -1,0 +1,39 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack-primary;
+    color: #444;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;     
+}
+
+//stretch element to make flexbox sticky footer work
+.flex {
+  flex: 1 0 0;   
+}
+
+h2 {
+    font-family: $font-stack-secondary;
+    font-weight: normal;
+    color: $color-primary;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}

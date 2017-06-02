@@ -1,0 +1,10 @@
+﻿.container {
+    @media #{$brk-tablet} {
+        width: 90%;
+        margin: auto;
+    }
+
+    @media #{$brk-desktop} {
+        max-width: 1100px;
+    }
+}

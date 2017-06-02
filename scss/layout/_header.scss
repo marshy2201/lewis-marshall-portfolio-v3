@@ -1,0 +1,79 @@
+﻿.header {
+    background-color: $color-secondary;
+    border-bottom: 8px solid $color-primary;
+    padding: 18px 1em 10px;
+    color: $white;
+
+    @media #{$brk-tablet} {
+        padding: 24px 1em;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h2 {
+        color: $white;
+        margin: 0;
+        @extend %hide-tablet;
+    } 
+}
+
+#menu-icon {
+    width: 40px;
+    cursor: pointer;
+    @extend %hide-tablet;    
+}
+
+#navigation {
+    font-family: $font-stack-secondary;
+    font-size: 1.5em;
+    width: 100%;
+    display: none;
+    @media #{$brk-tablet} {
+        display: flex;
+        justify-content: space-between;
+
+        .active {
+            border-bottom: 3px solid $color-primary;
+        }
+
+        a {
+            transition: color .3s;
+            color: $white;
+            &:hover {
+                color: lighten($color-primary, 20%);
+            }
+        }
+    }
+
+    @media #{$brk-desktop} {
+        justify-content: flex-end;
+        width: initial;
+        li {
+            margin-left: 55px;
+        }
+    }
+}
+
+#treehouse-offer {
+    display: none;
+    order: -1;
+            
+    @media #{$brk-desktop} {
+        display: inline-block;
+    }
+
+    img {
+        width: 165px;
+        box-shadow: 0 0 2px $white;
+        border-radius: 5px;
+        transition: box-shadow .5s;
+        &:hover {
+            box-shadow: 0 0 10px $white;
+        }
+    }
+}
+

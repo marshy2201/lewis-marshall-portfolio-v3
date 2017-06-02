@@ -1,0 +1,59 @@
+﻿.footer {
+    background-color: $color-secondary;
+    border-top: 8px solid $color-primary;
+    padding: 24px 1em;
+    color: $white;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$brk-desktop} {
+            justify-content: center;
+        }
+    }
+
+    p {
+        font-size: .7em;
+    }
+}
+
+%footer-divs {
+    @media #{$brk-desktop} {
+        margin: 0 12px;
+    }
+}
+
+.footer-links {
+    @extend %footer-divs;
+}
+.developer {
+    @extend %footer-divs;
+}
+
+svg {
+    width: 28px;
+    height: 28px;
+
+    @media #{$brk-tablet} {
+        width: 35px;
+        height: 35px;
+    }
+
+    &:hover path {
+        fill: $color-primary;
+    }
+
+    path {
+        fill: #aaa;
+        transition: fill .3s;
+    }
+}
+
+.vertical-line {
+    display: inline-block;
+    border-left: 2px solid #aaa;
+    border-right: 2px solid #aaa;
+    margin: 0 10px;
+    padding: 0 10px;
+}

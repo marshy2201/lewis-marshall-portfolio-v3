@@ -1,0 +1,17 @@
+﻿// Colors 
+$color-primary      : #365f91;
+$color-secondary    : #333;
+$color-bg           : #eee;
+$color-border       : #999;
+$black              : #000;
+$white              : #fff;
+
+$color-light        : lighten($color-primary, 35%);
+
+// Fonts
+$font-stack-primary   : 'Open Sans', sans-serif;
+$font-stack-secondary : 'Baloo Tamma', cursive;
+
+// Media Queries 
+$brk-tablet     : '(min-width: 640px)';
+$brk-desktop    : '(min-width: 1100px)';
